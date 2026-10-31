@@ -1,5 +1,4 @@
-# Ankit001853.github.io
-Personal portfolio website showcasing my projects and skills, built with HTML, CSS, and JavaScript.
+
 # Ankit Dhakal — Portfolio Website
 
 **Live site:** https://Ankit001853.github.io/ 
