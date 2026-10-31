@@ -82,13 +82,11 @@ Text version of the layout:
 | CONTACT                                          |
 | Name [______]  Email [______]                    |
 | Message [_____________________]   [ Send ]       |
-| GitHub icon                                      |
+| GitHub                                    |
 +--------------------------------------------------+
 | © 2026 Ankit Dhakal                              |  <- footer
 +--------------------------------------------------+
 ```
-
-On mobile, the nav collapses into a menu button and all columns stack vertically.
 
 ### Color Scheme
 | Role | Color | Hex |
@@ -105,9 +103,6 @@ Dark blue communicates professionalism and trust, and light grey keeps the layou
 - **Headings:** *Merriweather* (serif): a modern, screen-friendly alternative to Times New Roman that keeps a classic, professional feel.
 - **Body text:** *Inter* (sans-serif): highly readable on screens at small sizes.
 - Base font size of 16px with a line height of 1.6.
-
-### Icons and Images
-Simple line icons (Font Awesome) are used for skills, project links, and GitHub. Each project card includes a screenshot. Visuals add personality without cluttering the minimalist layout.
 
 ### Consistency
 All pages share the same color variables, fonts, spacing scale, button styles, and card styles, defined once in CSS custom properties (`:root`).
@@ -127,32 +122,26 @@ The layout uses Flexbox and CSS Grid with media queries so it works on phones, t
 | Feature | How it works | Why it helps |
 |---|---|---|
 | Fixed navigation bar | Stays at the top while scrolling; links smooth-scroll to sections | Visitors can jump anywhere instantly |
-| Active link highlight | The current section's nav link is highlighted while scrolling | Visitors always know where they are |
-| Mobile menu toggle | Hamburger button opens/closes the menu | Keeps navigation usable on small screens |
+| Active link highlight | The current section's nav link is highlighted while scrolling | Visitors always know where they are | 
 | Call-to-action buttons | "View Projects" and "Contact Me" in the hero | Guides visitors to the most important actions |
 | Hover effects | Buttons and project cards change on hover/focus | Shows what is clickable |
-| Contact form | Sends messages via Formspree; validated with JavaScript | Lets visitors reach me without leaving the site |
+| Contact form | JavaScript validates the form and shows a success message |
 | Form feedback | Inline error messages for empty/invalid fields; success message after sending | Users know immediately whether the action worked |
 | Back-to-top button | Appears after scrolling down | Quick return to the top on long pages |
 
 ## 7. Technical Overview
 - **Languages:** HTML5, CSS3, JavaScript 
 - **Hosting:** GitHub Pages
-- **Form handling:** Formspree 
-- **Fonts and icons:** Google Fonts, Font Awesome
+- **Fonts:** Google Fonts
 - **Version control:** Git and GitHub
 
 ### File Structure
-```
 /
-├── index.html        # Main page (all sections)
-├── css/
-│   └── style.css     # All styles, organized by section
-├── js/
-│   └── script.js     # Navigation, form validation, interactions
-├── images/           # Project screenshots, wireframe, icons
-└── README.md         # This design document
-```
+├── index.html      # Main page (all sections)
+├── style.css       # All styles
+├── script.js       # Form check, active nav link, back-to-top button
+├── wireframe.png   # Wireframe image
+└── README.md       # Design document
 
 ## 8. Timeline / Project Milestones
 | Milestone | Tasks | Target date |
@@ -249,7 +238,7 @@ By using the same fonts, color palette, spacing, button styles, and card styles 
 Text meets a WCAG AA contrast ratio of at least 4.5:1, body text is at least 16px, and the HTML uses semantic tags. Images have alt text, form fields have labels, and all interactive elements work with a keyboard and show a visible focus outline.
 
 **11. Will you use icons, images, or illustrations? Why?**
-Yes. Simple icons for skills and links, and screenshots for each project. They add visual interest and help visitors understand projects quickly without cluttering the design.
+No
 
 **12. What portfolio websites inspired your design?**
 Lynn Fisher
@@ -265,7 +254,7 @@ A minimal, polished portfolio showcasing product design and UX case studies
 A fixed navigation menu with smooth scrolling, a mobile menu toggle, call-to-action buttons, hover effects on cards and buttons, a contact form, and a back-to-top button.
 
 **2. Will your site include a contact form? How will it work?**
-Yes. Visitors enter their name, email, and message. JavaScript checks that all fields are filled in and the email is valid, and Formspree delivers the message to my email.
+Yes. Visitors enter their name, email, and message. JavaScript checks that all fields are filled in and the email is valid, and it delivers the message to my email.
 
 **3. What JavaScript features will you implement?**
 - Smooth scrolling and active link highlighting in the navigation
@@ -284,7 +273,5 @@ It makes the site easy to navigate on any device, shows users what is clickable,
 ## 10. External Resources
 - [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 - [Google Fonts](https://fonts.google.com/): Merriweather and Inter
-- [Font Awesome](https://fontawesome.com/): icons
-- [Formspree](https://formspree.io/): contact form handling
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): accessibility testing
 - [MDN Web Docs](https://developer.mozilla.org/): HTML, CSS, and JavaScript reference
