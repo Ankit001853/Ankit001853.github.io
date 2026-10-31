@@ -56,7 +56,7 @@ Home ──► About ──► Projects ──► Contact
 
 ### Wireframe
 
-![Wireframe](images/wireframe.png)
+![Wireframe](wireframe.png)
 
 Text version of the layout:
 
