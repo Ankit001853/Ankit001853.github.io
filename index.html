@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Dhakal | Portfolio</title>
+    <!-- Google Fonts: Merriweather for headings, Inter for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <!-- Link to my CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <!-- Top bar with my name and links to each section -->
+    <header>
+        <nav>
+            <!-- My name on the left -->
+            <h2>Ankit Dhakal</h2>
+            <!-- Links that jump to each section on the page -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ========== HOME SECTION ========== -->
+    <!-- First thing visitors see: my name, title, and short bio -->
+    <section id="home">
+        <h1>Ankit Dhakal</h1>
+        <p>Computer Science Student | Aspiring Software Developer</p>
+        <!-- Short bio -->
+        <p>I enjoy solving problems and turning ideas into working software.
+           I build projects in Java, Python, and web development.</p>
+        <!-- Buttons that take visitors to my projects or contact form -->
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+    <!-- ========== ABOUT SECTION ========== -->
+<!-- More about me, my skills, and achievements -->
+<section id="about">
+    <h2>About Me</h2>
+    <!-- Longer bio -->
+    <p>I'm a computer science student who likes breaking big problems into
+       simple steps. I'm currently building SubTrack and working on smaller
+       projects to keep improving my skills. My goal is to become a software
+       developer, starting with an internship where I can learn from real projects.</p>
+    <!-- List of my skills -->
+    <h3>Skills</h3>
+    <ul class="skills">
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>GitHub</li>
+    </ul>
+    <!-- Things I've done -->
+    <h3>Achievements</h3>
+    <ul>
+        <li>Participated in a hackathon</li>
+        <li>Building SubTrack, my biggest project so far</li>
+    </ul>
+</section>
+    <!-- ========== PROJECTS SECTION ========== -->
+    <!-- My main project first, then smaller ones -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Featured project: SubTrack -->
+        <div class="project featured">
+            <h3>SubTrack (in progress)</h3>
+            <p>A privacy-first mobile app for tracking recurring subscriptions.
+               Users log their own charges, so it never asks for bank or card details.
+               It shows total spending, upcoming renewals, and what a plan will cost
+               once a free trial ends.</p>
+            <a href="https://github.com/Ankit001853" class="btn">View Code</a>
+        </div>
+        <!-- Smaller projects -->
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>To-Do List (in progress)</h3>
+                <p>A task manager that lets users add, complete, and delete tasks.</p>
+                <a href="https://github.com/Ankit001853" class="btn">View Code</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Calculator (in progress)</h3>
+                <p>A calculator that performs basic arithmetic operations.</p>
+                <a href="https://github.com/Ankit001853" class="btn">View Code</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>This Portfolio</h3>
+                <p>A responsive personal site built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/Ankit001853/Ankit001853.github.io" class="btn">View Code</a>
+            </div>
+        </div>
+    </section>
+        <!-- ========== CONTACT SECTION ========== -->
+    <!-- Form so visitors can send me a message, plus my GitHub -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Want to connect or talk about an opportunity? Send me a message!</p>
+        <!-- Contact form  -->
+        <form id="contact-form">
+            <!-- Name field -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <!-- Email field -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <!-- Message field -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <button type="submit" class="btn">Send</button>
+            <!-- Error or success message shows up here -->
+            <p id="form-status"></p>
+        </form>
+        <!-- Link to my GitHub -->
+        <p>Find me on <a href="https://github.com/Ankit001853" target="_blank">GitHub</a></p>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2026 Ankit Dhakal</p>
+    </footer>
+    <!-- Link to my JavaScript file  -->
+    <script src="script.js"></script>
+</body>
+</html>
