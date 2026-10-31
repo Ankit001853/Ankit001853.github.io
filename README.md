@@ -56,7 +56,7 @@ Home ──► About ──► Projects ──► Contact
 
 ### Wireframe
 
-wirefram.png
+images/wirefram.png
 
 Text version of the layout:
 
